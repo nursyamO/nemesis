@@ -1,4 +1,4 @@
-version: '3.8'
+version: "3.8"
 
 services:
   nemesis:
@@ -7,6 +7,8 @@ services:
     ports:
       - "3000:3000"
     environment:
+      # Adjust the environment, port, CORS, database path, and dataset directory as needed
+      # Default configuration (can be overridden by .env file)
       - NODE_ENV=production
       - PORT=3000
       - CORS_ORIGIN=*
