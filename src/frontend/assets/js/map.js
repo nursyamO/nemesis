@@ -68,8 +68,8 @@ window['AuditMap'] = (() => {
     if (map) return;
     map = new window['maplibregl'].Map({
       container,
-      center: [118, -2.5],
-      zoom: 5,
+      center: [106.9272, -6.9273],
+      zoom: 11,
       minZoom: 4,
       maxZoom: 12,
       style: 'https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json',
@@ -107,7 +107,7 @@ window['AuditMap'] = (() => {
       type: 'fill',
       source: SOURCE,
       paint: {
-        'fill-color': ['coalesce', ['get', 'fillColor'], '#243155'],
+        'fill-color': ['coalesce', ['get', 'fillColor'], 'rgba(46, 204, 113, 0.5)'],
         'fill-opacity': ['coalesce', ['get', 'fillOpacity'], 0.08],
       },
     });
@@ -129,7 +129,7 @@ window['AuditMap'] = (() => {
       type: 'fill',
       source: SOURCE,
       paint: {
-        'fill-color': ['coalesce', ['get', 'fillColor'], '#243155'],
+        'fill-color': ['coalesce', ['get', 'fillColor'], 'rgba(46, 204, 113, 0.5)'],
         'fill-opacity': [
           'case',
           ['boolean', ['feature-state', 'hover'], false],
